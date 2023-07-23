@@ -22,5 +22,11 @@ Route::get('/', function () {
 Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash');
+
+    Route::get('/forms', [AdminsController::class, 'dashboardforms'])->name('adminforms');
+
+    Route::get('/blank', [AdminsController::class, 'blankpage'])->name('blankpage');
+
+    Route::get('table', [AdminsController::class, 'tablepage'])->name('tablepage');
 }
 );

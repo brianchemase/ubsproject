@@ -17,11 +17,11 @@
 	<title>UBS System</title>
 
 	<!-- <link href="css/app.css" rel="stylesheet"> -->
-    <link href="{{asset('clientsdash/css/app.css')}}" rel="stylesheet">
+    <link href="{{asset('adminsdash/css/app.css')}}" rel="stylesheet">
 	<!-- BEGIN SETTINGS -->
 
 	<!-- BEGIN SETTINGS -->
-	<script src="{{asset('clientsdash/js/settings.js')}}"></script>
+	<script src="{{asset('adminsdash/js/settings.js')}}"></script>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
@@ -37,21 +37,21 @@
             <!-- top bar link -->
 
             @include('admins.inc.header')
-			
+
             <!-- end of top bar -->
 
             @yield('content')
 
-			
+
 
             @include('admins.inc.footer')
-            
+
 		</div>
 	</div>
 
-	
-    <script src="{{asset('clientsdash/js/app.js')}}"></script>
-	<script src="{{asset('clientsdash/js/datatables.js')}}"></script>
+
+    <script src="{{asset('adminsdash/js/app.js')}}"></script>
+	<script src="{{asset('adminsdash/js/datatables.js')}}"></script>
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function() {
@@ -65,8 +65,8 @@
 		});
 	</script>
 
-	
-	
+
+
 
 </body>
 

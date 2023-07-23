@@ -24,4 +24,16 @@ class AdminsController extends Controller
 
         return view ('admins.home')->with($data);
     }
+
+    public function dashboardforms(){
+        return view('admins.forms');
+    }
+
+    public function blankpage(){
+        return view('admins.blank');
+    }
+
+    public function tablepage(){
+        return view('admins.table');
+    }
 }

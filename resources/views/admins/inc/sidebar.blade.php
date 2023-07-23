@@ -19,7 +19,7 @@
 						Clients Management
 					</li>
 
-	
+
 					<li class="sidebar-item">
 						<a class="sidebar-link" href="{{route('admindash')}}">
                             <i class="align-middle"data-feather="user"></i> <span class="align-middle">Register Clients</span>
@@ -56,23 +56,23 @@
                         </a>
 					</li>
 
-                  
+
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="{{route('admindash')}}">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Blank PAge</span>
+						<a class="sidebar-link" href="{{route('blankpage')}}">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Blank Page</span>
                         </a>
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="{{route('admindash')}}">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Form PAge</span>
+						<a class="sidebar-link" href="{{route('adminforms')}}">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Form Page</span>
                         </a>
 					</li>
 
 					<li class="sidebar-item">
-						<a class="sidebar-link" href="{{route('admindash')}}">
-                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Table PAge</span>
+						<a class="sidebar-link" href="{{route('tablepage')}}">
+                            <i class="align-middle" data-feather="user"></i> <span class="align-middle">Table Page</span>
                         </a>
 					</li>
 
@@ -87,10 +87,10 @@
                         </a>
 					</li>
 
-				
-					
+
+
 				</ul>
 
-				
+
 			</div>
 		</nav>
