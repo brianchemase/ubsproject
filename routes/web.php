@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\UsersDashController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,5 +29,20 @@ Route::group(['prefix' => 'admins'], function() {
     Route::get('/blank', [AdminsController::class, 'blankpage'])->name('blankpage');
 
     Route::get('table', [AdminsController::class, 'tablepage'])->name('tablepage');
+}
+);
+
+
+
+
+Route::group(['prefix' => 'users'], function() {
+
+    Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash');
+
+    //Route::get('/forms', [UsersDashController::class, 'dashboardforms'])->name('adminforms');
+
+   // Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('blankpage');
+
+    //Route::get('table', [UsersDashController::class, 'tablepage'])->name('tablepage');
 }
 );
