@@ -39,10 +39,10 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash');
 
-    //Route::get('/forms', [UsersDashController::class, 'dashboardforms'])->name('adminforms');
+    Route::get('/forms', [UsersDashController::class, 'userforms'])->name('useradminforms');
 
-   // Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('blankpage');
+    Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('userblankpage');
 
-    //Route::get('table', [UsersDashController::class, 'tablepage'])->name('tablepage');
+    Route::get('/table', [UsersDashController::class, 'tablepage'])->name('tablepage');
 }
 );

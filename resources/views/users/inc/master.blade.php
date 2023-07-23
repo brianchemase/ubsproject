@@ -14,16 +14,16 @@
     <link href="https://maxcdn.icons8.com/fonts/line-awesome/1.1/css/line-awesome.min.css" rel="stylesheet">
     <!-- BEGIN VENDOR CSS-->
 
-    <link rel="stylesheet" type="text/css" href="{{asset('dash/theme-assets/css/vendors.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('dash/theme-assets/vendors/css/charts/chartist.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('userdash/theme-assets/css/vendors.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('userdash/theme-assets/vendors/css/charts/chartist.css')}}">
     <!-- END VENDOR CSS-->
     <!-- BEGIN CHAMELEON  CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('dash/theme-assets/css/app-lite.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('userdash/theme-assets/css/app-lite.css')}}">
     <!-- END CHAMELEON  CSS-->
     <!-- BEGIN Page Level CSS-->
-    <link rel="stylesheet" type="text/css" href="{{asset('dash/theme-assets/css/core/menu/menu-types/vertical-menu.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('dash/theme-assets/css/core/colors/palette-gradient.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('dash/theme-assets/css/pages/dashboard-ecommerce.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('userdash/theme-assets/css/core/menu/menu-types/vertical-menu.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('userdash/theme-assets/css/core/colors/palette-gradient.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('userdash/theme-assets/css/pages/dashboard-ecommerce.css')}}">
     <!-- END Page Level CSS-->
     <!-- BEGIN Custom CSS-->
     <!-- END Custom CSS-->
@@ -32,7 +32,7 @@
 
     <!-- fixed-top-->
     @include('users.inc.header')
-   
+
 
     <!-- ////////////////////////////////////////////////////////////////////////////-->
 
@@ -40,26 +40,26 @@
 
 
     @yield('content')
-  
+
 
 
 
 
     @include('users.inc.footer')
-  
+
 
     <!-- BEGIN VENDOR JS-->
-    <script src="{{asset('dash/theme-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('userdash/theme-assets/vendors/js/vendors.min.js')}}" type="text/javascript"></script>
     <!-- BEGIN VENDOR JS-->
     <!-- BEGIN PAGE VENDOR JS-->
-    <script src="{{asset('dash/theme-assets/vendors/js/charts/chartist.min.js')}}" type="text/javascript"></script>
+    <script src="{{asset('userdash/theme-assets/vendors/js/charts/chartist.min.js')}}" type="text/javascript"></script>
     <!-- END PAGE VENDOR JS-->
     <!-- BEGIN CHAMELEON  JS-->
-    <script src="{{asset('dash/theme-assets/js/core/app-menu-lite.js')}}" type="text/javascript"></script>
-    <script src="{{asset('dash/theme-assets/js/core/app-lite.js')}}" type="text/javascript"></script>
+    <script src="{{asset('userdash/theme-assets/js/core/app-menu-lite.js')}}" type="text/javascript"></script>
+    <script src="{{asset('userdash/theme-assets/js/core/app-lite.js')}}" type="text/javascript"></script>
     <!-- END CHAMELEON  JS-->
     <!-- BEGIN PAGE LEVEL JS-->
-    <script src="{{asset('dash/theme-assets/js/scripts/pages/dashboard-lite.js')}}" type="text/javascript"></script>
+    <script src="{{asset('userdash/theme-assets/js/scripts/pages/dashboard-lite.js')}}" type="text/javascript"></script>
     <!-- END PAGE LEVEL JS-->
   </body>
 </html>

@@ -25,4 +25,16 @@ class UsersDashController extends Controller
 
         return view ('users.home')->with($data);
     }
+
+    public function tablepage(){
+        return view('users.tabledata');
+    }
+
+    public function userforms(){
+        return view('users.forms');
+    }
+
+    public function blankpage(){
+        return view('users.blank');
+    }
 }
