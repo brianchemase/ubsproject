@@ -29,7 +29,7 @@
             <li class=" nav-item"><a href="{{ route('userblankpage') }}"><i class="ft-bold"></i><span class="menu-title"
                         data-i18n="">Blank Page</span></a>
             </li>
-            <li class=" nav-item"><a href="{{ route('tablepage') }}"><i class="ft-credit-card"></i><span
+            <li class=" nav-item"><a href="{{ route('usertablepage') }}"><i class="ft-credit-card"></i><span
                         class="menu-title" data-i18n="">Tables</span></a>
             </li>
             <li class=" nav-item"><a href="{{ route('useradminforms') }}"><i class="ft-layout"></i><span

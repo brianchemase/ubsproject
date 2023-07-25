@@ -28,7 +28,7 @@ Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/blank', [AdminsController::class, 'blankpage'])->name('blankpage');
 
-    Route::get('table', [AdminsController::class, 'tablepage'])->name('tablepage');
+    Route::get('/table', [AdminsController::class, 'tablepage'])->name('tablepage');
 }
 );
 
@@ -43,6 +43,6 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('userblankpage');
 
-    Route::get('/table', [UsersDashController::class, 'tablepage'])->name('tablepage');
+    Route::get('/table', [UsersDashController::class, 'tablepage'])->name('usertablepage');
 }
 );
