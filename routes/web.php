@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\FinancialSustainabilityController;
 use App\Http\Controllers\UsersDashController;
 
 /*
@@ -44,5 +45,14 @@ Route::group(['prefix' => 'users'], function() {
     Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('userblankpage');
 
     Route::get('/table', [UsersDashController::class, 'tablepage'])->name('usertablepage');
+
+    //financial sustainability index page
+
+    Route::get('/financial_sustainability/', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
+
+    //financial sustainability form
+
+    Route::get('/financial_sustainability/forms', [FinancialSustainabilityController::class, 'financeform'])->name('financialSustainabilityForm');
 }
 );
+

@@ -14,8 +14,8 @@
             <li class="active"><a href="{{ route('dash') }}"><i class="ft-home"></i><span class="menu-title"
                         data-i18n="">Dashboard</span></a>
             </li>
-            <li class=" nav-item"><a href="charts.html"><i class="ft-pie-chart"></i><span class="menu-title"
-                        data-i18n="">Charts</span></a>
+            <li class=" nav-item"><a href="{{ route('financialSustainabilityIndex') }}"><i class="ft-pie-chart"></i><span class="menu-title"
+                        data-i18n="">Financial Stability</span></a>
             </li>
             <li class=" nav-item"><a href="icons.html"><i class="ft-droplet"></i><span class="menu-title"
                         data-i18n="">Icons</span></a>
