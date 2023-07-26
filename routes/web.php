@@ -56,7 +56,7 @@ Route::group(['prefix' => 'users'], function() {
 
     //Financial Management
 
-
+    Route::get('/forms/finance_management', [FinancialSustainabilityController::class, 'financeManagementForm'])->name('financeManagementForm');
 }
 );
 

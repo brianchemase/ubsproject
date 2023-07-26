@@ -9,7 +9,7 @@
             <div class="content-wrapper-before"></div>
                 <div class="content-header row">
                     <div class="content-header-left col-md-4 col-12 mb-2">
-                        <h3 class="content-header-title">Financial Sustainability form</h3>
+                        <h3 class="content-header-title">Income Diversification form</h3>
                     </div>
                     <div class="content-header-right col-md-8 col-12">
                         <div class="breadcrumbs-top float-md-right">
@@ -28,7 +28,7 @@
 
         <div class="content-body">
 
-            <form class="col-12">
+            <form class="col-12 mb-4">
                 <div class="row match-height mx-auto gx-3">
                     <div class="card col-xl-4 col-lg-6 col-md-12 ">
                         <div class="card-block">
@@ -143,7 +143,7 @@
                     <div class="card col-xl-4 col-lg-6 col-12 ">
                         <div class="card-block">
                             <div class="card-header">
-                                Other Income
+                                Gross Income
                             </div>
                             <div class="card-body">
                                 <fieldset class="form-group">
@@ -153,6 +153,10 @@
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div class="row match-height gx-3 col-12 w-100">
+                    <button class="btn btn-primary px-2 py-1 mx-auto" type="submit">Submit</button>
                 </div>
             </form>
         </div>
