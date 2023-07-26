@@ -67,6 +67,9 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/mission_sustainability', [MissionSustainabilityController::class, 'index'])->name('missionSustainabilityIndex');
 
+    //Bible translation
+
+    Route::get('/forms/bible-translation', [MissionSustainabilityController::class, 'bibleTranslation'])->name('bibleTranslationForm');
 }
 );
 
