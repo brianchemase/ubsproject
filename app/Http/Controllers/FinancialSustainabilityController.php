@@ -12,7 +12,7 @@ class FinancialSustainabilityController extends Controller
         return view('users.financial-sustainability.financial-sustainability');
     }
 
-    public function financeform(){
-        return view('users.financial-sustainability.financial-sustainability-forms');
+    public function incomediversificationform(){
+        return view('users.financial-sustainability.income-diversification');
     }
 }

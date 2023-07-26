@@ -50,9 +50,13 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/financial_sustainability/', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
 
-    //financial sustainability form
+    //income diversification form
 
-    Route::get('/financial_sustainability/forms', [FinancialSustainabilityController::class, 'financeform'])->name('financialSustainabilityForm');
+    Route::get('/forms/income_diversification', [FinancialSustainabilityController::class, 'incomediversificationform'])->name('incomeDiversificationForm');
+
+    //Financial Management
+
+
 }
 );
 

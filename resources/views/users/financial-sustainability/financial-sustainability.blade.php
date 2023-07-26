@@ -28,7 +28,7 @@
 
                 <div class="col-12 card">
                     <div class="card-body">
-                        <a href="{{ route('financialSustainabilityForm') }}" class="btn btn-primary"> Fill Form</a>
+                        <a href="{{ route('incomeDiversificationForm') }}" class="btn btn-primary"> Income Diversification Form</a>
                     </div>
 
                 </div>
