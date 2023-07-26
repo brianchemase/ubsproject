@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
 use App\Http\Controllers\FinancialSustainabilityController;
+use App\Http\Controllers\MissionSustainabilityController;
 use App\Http\Controllers\UsersDashController;
 
 /*
@@ -46,7 +47,8 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/table', [UsersDashController::class, 'tablepage'])->name('usertablepage');
 
-    //financial sustainability index page
+    //******* financial sustainability *******//
+    //index page
 
     Route::get('/financial_sustainability/', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
 
@@ -57,6 +59,14 @@ Route::group(['prefix' => 'users'], function() {
     //Financial Management
 
     Route::get('/forms/finance_management', [FinancialSustainabilityController::class, 'financeManagementForm'])->name('financeManagementForm');
+
+
+
+    //*****mission sustainability ******//
+    //index page
+
+    Route::get('/mission_sustainability', [MissionSustainabilityController::class, 'index'])->name('missionSustainabilityIndex');
+
 }
 );
 

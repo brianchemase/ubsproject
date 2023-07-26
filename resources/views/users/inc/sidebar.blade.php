@@ -15,10 +15,10 @@
                         data-i18n="">Dashboard</span></a>
             </li>
             <li class=" nav-item"><a href="{{ route('financialSustainabilityIndex') }}"><i class="ft-pie-chart"></i><span class="menu-title"
-                        data-i18n="">Financial Stability</span></a>
+                        data-i18n="">Finance Reports</span></a>
             </li>
-            <li class=" nav-item"><a href="icons.html"><i class="ft-droplet"></i><span class="menu-title"
-                        data-i18n="">Icons</span></a>
+            <li class=" nav-item"><a href="{{ route('missionSustainabilityIndex') }}"><i class="ft-droplet"></i><span class="menu-title"
+                        data-i18n="">Mission Reports</span></a>
             </li>
             <li class=" nav-item"><a href="cards.html"><i class="ft-layers"></i><span class="menu-title"
                         data-i18n="">Cards</span></a>
