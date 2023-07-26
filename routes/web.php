@@ -70,6 +70,12 @@ Route::group(['prefix' => 'users'], function() {
     //Bible translation
 
     Route::get('/forms/bible-translation', [MissionSustainabilityController::class, 'bibleTranslation'])->name('bibleTranslationForm');
+
+    //Bible publishing and Distribution
+
+    Route::get('/forms/bible-publishing-and-translation', [MissionSustainabilityController::class, 'biblePublishingAndDistribution'])->name('biblePublishingAndDistributionForm');
+
+
 }
 );
 

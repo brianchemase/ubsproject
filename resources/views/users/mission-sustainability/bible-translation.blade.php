@@ -9,7 +9,7 @@
             <div class="content-wrapper-before"></div>
             <div class="content-header row">
                 <div class="content-header-left col-md-4 col-12 mb-2">
-                    <h3 class="content-header-title">Income Diversification form</h3>
+                    <h3 class="content-header-title">Bible Translation Data Form</h3>
                 </div>
                 <div class="content-header-right col-md-8 col-12">
                     <div class="breadcrumbs-top float-md-right">

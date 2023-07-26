@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <a href="{{ route('bibleTranslationForm') }}" class="btn btn-primary"> Bible Translation Data Form</a>
 
-                        <a href="#" class="btn btn-primary"> Bible Publishing and Distribution Data Form</a>
+                        <a href="{{ route('biblePublishingAndDistributionForm') }}" class="btn btn-primary"> Bible Publishing and Distribution Data Form</a>
 
                         <a href="#" class="btn btn-primary"> Scripture Engagement Data Form</a>
 
