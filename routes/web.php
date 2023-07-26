@@ -75,6 +75,9 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/forms/bible-publishing-and-translation', [MissionSustainabilityController::class, 'biblePublishingAndDistribution'])->name('biblePublishingAndDistributionForm');
 
+    //Scripture Engagement
+
+    Route::get('/forms/scripture_engagement', [MissionSustainabilityController::class, 'scriptureEngagement'])->name('scriptureEngagementForm');
 
 }
 );

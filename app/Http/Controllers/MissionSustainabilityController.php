@@ -19,4 +19,8 @@ class MissionSustainabilityController extends Controller
     public function biblePublishingAndDistribution(){
         return view('users.mission-sustainability.bible-publishing-and-distribution');
     }
+
+    public function scriptureEngagement(){
+        return view('users.mission-sustainability.scripture-engagement');
+    }
 }
