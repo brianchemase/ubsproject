@@ -15,95 +15,127 @@
                     <div class="breadcrumbs-top float-md-right">
                         <div class="breadcrumb-wrapper mr-1">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                <li class="breadcrumb-item"><a href="{{ route('dash') }}">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active">Form
+                                <li class="breadcrumb-item"><a href="{{ route('missionSustainabilityIndex') }}">Mission
+                                        Reports</a>
+                                </li>
+                                <li class="breadcrumb-item active">Bible Publishing and Distribution Form
                                 </li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-body">
+            <div class="content-body">
+                <section class="tooltip-validations" id="tooltip-validation">
+                    <div class="row">
+                        <div class="col-12 mt-3 mb-1">
+                            <h4 class="content-header-title">Bible Publishing and Distribution Data Forms</h4>
+                        </div>
+                    </div>
+                    <div class="row match-height">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <label class="card-title" for="inputDanger"><strong>Bible Publishing and
+                                            Distribution</strong></label>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <form class="needs-validation" novalidate="">
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Printed Bible Distribution
+                                            </h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="first-translation-physical-bible-distribution">First
+                                                        Translation Physical Bibles Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="first-translation-physical-bible-distribution">
+                                                </div>
 
-            <form class="col-12 mb-4">
-                <div class="row match-height mx-auto gx-3">
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Printed Bible Distribution
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">First Translation Physical Bibles Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control" id="first-translation-physical-bible-distribution">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Revised Physical Bibles Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="revised-physical-bible-distribution">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Other Physical Bible Versions and Material Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control" id="other-physical-bible-versions-and-material-distribution">
-                                </fieldset>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="revised-physical-bible-distribution">Revised Physical Bibles
+                                                        Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="revised-physical-bible-distribution">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label
+                                                        for="other-physical-bible-versions-and-material-distribution">Other
+                                                        Physical Bible Versions and Material Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="other-physical-bible-versions-and-material-distribution">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Electronic Bible
+                                                Distribution</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="first-translation-electronic-bible-distribution">First
+                                                        Translation Electronic Bibles Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="first-translation-electronic-bible-distribution">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="revised-electronic-bible-distribution">Revised Electronic
+                                                        Bibles Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="revised-electronic-bible-distribution">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label
+                                                        for="other-electronic-bible-versions-and-material-distribution">Other
+                                                        Electronic Bible Versions and Material Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="other-electronic-bible-versions-and-material-distribution">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Audio Visual Bible Distribution
+                                            </h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="first-translation-audio-visual-bible-distribution">First
+                                                        Translation Audio Visual Bibles Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="first-translation-audio-visual-bible-distribution">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="revised-audio-visual-bible-distribution">Revised Audio
+                                                        Visual Bibles Ordered and Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="revised-audio-visual-bible-distribution">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label
+                                                        for="other-audio-visual-bible-versions-and-material-distribution">Other
+                                                        Audio Visual Bible Versions and Material Ordered and
+                                                        Supplied</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="other-audio-visual-bible-versions-and-material-distribution">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row match-height gx-3 col-12 w-100">
+                                                <button class="btn btn-primary px-2 py-1 mx-auto"
+                                                    type="submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Electronic Bible Distribution
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">First Translation Electronic Bibles Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control" id="first-translationelectronic-bible-distribution">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Revised Electronic Bibles Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="revisedelectronic-bible-distribution">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Other Electronic Bible Versions and Material Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control" id="otherelectronic-bible-versions-and-material-distribution">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Audio Visual Bible Distribution
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">First Translation Audio Visual Bibles Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control" id="first-audio-visual-translation-bible-distribution">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Revised Audio Visual Bibles Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="revised-audio-visual-bible-distribution">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Other Audio Visual Bible Versions and Material Ordered and Supplied</small>
-                                    <input type="number" step="1" class="form-control" id="other-audio-visual-bible-versions-and-material-distribution">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row match-height gx-3 col-12 w-100">
-                    <button class="btn btn-primary px-2 py-1 mx-auto" type="submit">Submit</button>
-                </div>
-            </form>
+                </section>
+            </div>
         </div>
     </div>
 @endsection
