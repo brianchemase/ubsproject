@@ -9,7 +9,7 @@
             <div class="content-wrapper-before"></div>
             <div class="content-header row">
                 <div class="content-header-left col-md-4 col-12 mb-2">
-                    <h3 class="content-header-title">Income Diversification form</h3>
+                    <h3 class="content-header-title">Income Diversification</h3>
                 </div>
                 <div class="content-header-right col-md-8 col-12">
                     <div class="breadcrumbs-top float-md-right">
@@ -24,159 +24,110 @@
                     </div>
                 </div>
             </div>
+            <div class="content-body">
+
+<section class="tooltip-validations" id="tooltip-validation">
+    <div class="row"> 
+        <div class="col-12 mt-3 mb-1">
+            <h4 class="content-header-title">Income Diversification</h4>
         </div>
+    </div>
+    <div class="row match-height">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header">
+                    <label class="card-title" for="inputDanger"><strong>Income Diversification</strong></label>
+                </div>
+                <div class="card-block">
+                    <div class="card-body">
+                        <form class="needs-validation" novalidate="">
+                          <div class="form-row">
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="validationTooltip01">Physical Channel Sales</label>
+                                <input type="text" class="form-control position-relative" placeholder="holder"  required="">
+                            </div>
+                            <div class="col-md-4 mb-3">
+                              <label for="validationTooltip02">Bible Society Ecommerce</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
+                            </div>
 
-        <div class="content-body">
+                            <div class="col-md-4 mb-3">
+                              <label for="validationTooltip02">Other Online Marketplace Sales</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
+                            </div>
+                           
+                          </div>
+                           
+                             <h4 class="form-section"><i class="ft-clipboard"></i> Membership Fees</h4>
+                          <div class="form-row">
 
-            <form class="col-12 mb-4">
-                <div class="row match-height mx-auto gx-3">
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Scripture Sales Revenue
+                            <div class="col-md-6 mb-3">
+                              <label for="validationTooltip02">Individual Membership</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Physical Channel Sales</small>
-                                    <input type="number" step="1" class="form-control" id="physical-channel-sales">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Bible Society Ecommerce </small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="bs-ecommerce-channel-sales">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Other Online Marketplace Sales</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="other-online-channel-sales">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-xl-4 col-lg-6 col-md-12">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Membership Fees
+                            <div class="col-md-6 mb-3">
+                              <label for="validationTooltip02">Church and Corporate Membership</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Individual Membership</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="individual-membership-fees">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Church and Corporate Membership</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="church-and-corporate-membership-fees">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-xl-4 col-lg-6 col-md-12">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Fundraising
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Physical Fundraising</small>
-                                    <input type="number" step="1" class="form-control" id="physical-fundraising">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">International Support Programme (UBSA ISP)</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="international-support-programme">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Grants from Online Campaigns</small>
-                                    <input type="number" step="1" class="form-control" id="online-campaign-grants">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
+                        
+                          </div>
 
-                    <div class="card col-xl-4 col-lg-6 col-md-12">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Copyrights and Royalties
+                        
+                        <h4 class="form-section"><i class="ft-clipboard"></i> Fundraising</h4>
+                          <div class="form-row">
+                        
+                            <div class="col-md-4 mb-3">
+                              <label for="validationTooltip02">Physical Fundraising</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Copyright and Royalty income</small>
-                                    <input type="number" step="1" class="form-control" id="copyright-and-royalty">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-xl-4 col-lg-6 col-md-12">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Business and Rental Income
+                            <div class="col-md-4 mb-3">
+                              <label for="validationTooltip02">International Support Programme (UBSA ISP)</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Business and Rental Income</small>
-                                    <input type="number" step="1" class="form-control" id="business-and-rental">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="card col-xl-4 col-lg-6 col-md-12">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Other Income
+                            <div class="col-md-4 mb-3">
+                              <label for="validationTooltip02">Grants from Online Campaigns</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Other income</small>
-                                    <input type="number" step="1" class="form-control" id="other-income">
-                                </fieldset>
+
+                          </div>
+
+                          <h4 class="form-section"><i class="ft-clipboard"></i> Copyrights and Royalties</h4>
+                          <div class="form-row">
+                        
+                            <div class="col-md-8 mb-3">
+                              <label for="validationTooltip02">Copyright and Royalty income</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                        </div>
+
+                          </div>
+
+                          <h4 class="form-section"><i class="ft-clipboard"></i> Business and Rental Income</h4>
+                          <div class="form-row">
+                        
+                            <div class="col-md-8 mb-3">
+                              <label for="validationTooltip02">Business and Rental Income</label>
+                              <input type="text" class="form-control position-relative" placeholder="holder"  required="">
+                            </div>
+
+                          </div>
+
+
+
+                          <button class="btn btn-primary" type="submit">Submit form</button>
+                        </form>
                     </div>
                 </div>
-
-                <div class="row match-height mx-auto gx-3">
-                    <div class="card col-xl-4 col-lg-6 col-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Gross Income
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Gross Income</small>
-                                    <input type="number" step="1" class="form-control" id="other-income">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Stewardship Fund Contribution
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Stewardship Fund Contribution</small>
-                                    <input type="number" step="1" class="form-control" id="other-income">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-
-
-                <div class="row match-height gx-3 col-12 w-100">
-                    <button class="btn btn-primary px-2 py-1 mx-auto" type="submit">Submit</button>
-                </div>
-            </form>
+            </div>
+        </div>
+      
+    </div>
+</section>
+            </div>
         </div>
     </div>
 
