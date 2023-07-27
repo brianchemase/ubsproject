@@ -14,4 +14,8 @@ class CollaborationsController extends Controller
     public function membershipAndPartnership(){
         return view('users.collaborations.membership-and-partnerships');
     }
+
+    public function publicityAndCommunication(){
+        return view('users.collaborations.publicity-and-communication');
+    }
 }

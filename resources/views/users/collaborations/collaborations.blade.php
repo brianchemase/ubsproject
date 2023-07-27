@@ -30,7 +30,7 @@
                     <div class="card-body">
                         <a href="{{ route('membershipAndPartnership') }}" class="btn btn-primary"> Membership and Partnerships Data Form</a>
 
-                        <a href="#" class="btn btn-primary"> Publicity and Communications Data Form</a>
+                        <a href="{{ route('publicityAndCommunication') }}" class="btn btn-primary"> Publicity and Communications Data Form</a>
 
                     </div>
 

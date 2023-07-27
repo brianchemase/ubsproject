@@ -88,6 +88,10 @@ Route::group(['prefix' => 'users'], function() {
     //Membership and partnerships
 
     Route::get('/forms/membership_and_partnerships', [CollaborationsController::class, 'membershipAndPartnership'])->name('membershipAndPartnership');
+
+    //Membership and partnerships
+
+    Route::get('/forms/publicity_and_communication', [CollaborationsController::class, 'publicityAndCommunication'])->name('publicityAndCommunication');
 }
 );
 
