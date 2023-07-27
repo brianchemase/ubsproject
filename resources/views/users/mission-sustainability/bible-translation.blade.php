@@ -24,73 +24,104 @@
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-body">
+            <div class="content-body">
 
-            <form class="col-12 mb-4">
-                <div class="row match-height mx-auto gx-3">
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                First Bible Translation Projects
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Completed Electronic Translations</small>
-                                    <input type="number" step="1" class="form-control" id="completed-electronic-first-translations">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Ongoing Electronic Translations </small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ongoing-electronic-first-translations">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Completed Audio/Visual Translations</small>
-                                    <input type="number" step="1" class="form-control" id="completed-audiovisual-first-translations">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Ongoing Audio/Visual Translations </small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ongoing-audiovisual-first-translations">
-                                </fieldset>
+                <section class="tooltip-validations" id="tooltip-validation">
+                    <div class="row">
+                        <div class="col-12 mt-3 mb-1">
+                            <h4 class="content-header-title">Bible Translation Projects</h4>
+                        </div>
+                    </div>
+                    <div class="row match-height">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <label class="card-title" for="inputDanger"><strong>First Bible Translation
+                                            Projects</strong></label>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <form class="needs-validation" novalidate="">
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>First Bible Translation</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="completed-electronic-translations">Completed Electronic
+                                                        Translations</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="completed-electronic-translations">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ongoing-electronic-translations">Ongoing Electronic
+                                                        Translations</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ongoing-electronic-translations">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="completed-audiovisual-translations">Completed Audio/Visual
+                                                        Translations</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="completed-audiovisual-translations">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ongoing-audiovisual-translations">Ongoing Audio/Visual
+                                                        Translations</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ongoing-audiovisual-translations">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i> Bible Translation
+                                                Revisions</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="completed-electronic-revisions">Completed Electronic
+                                                        Revisions</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="completed-electronic-revisions">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ongoing-electronic-revisions">Ongoing Electronic
+                                                        Revisions</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ongoing-electronic-revisions">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="completed-audiovisual-revisions">Completed Audio/Visual
+                                                        Revisions</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="completed-audiovisual-revisions">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ongoing-audiovisual-revisions">Ongoing Audio/Visual
+                                                        Revisions</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ongoing-audiovisual-revisions">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row match-height gx-3 col-12">
+                                                <button class="btn btn-primary px-2 py-1 mx-auto"
+                                                    type="submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Revised Bible Translation Projects
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Completed Electronic Revisions</small>
-                                    <input type="number" step="1" class="form-control" id="completed-electronic-revisions">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Ongoing Electronic Revisions </small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ongoing-electronic-revisions">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Completed Audio/Visual Revisions</small>
-                                    <input type="number" step="1" class="form-control" id="completed-audiovisual-revisions">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Ongoing Audio/Visual Revisions </small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ongoing-audiovisual-revisions">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row match-height gx-3 col-12 w-100">
-                    <button class="btn btn-primary px-2 py-1 mx-auto" type="submit">Submit</button>
-                </div>
-            </form>
+                </section>
+            </div>
         </div>
     </div>
 @endsection
