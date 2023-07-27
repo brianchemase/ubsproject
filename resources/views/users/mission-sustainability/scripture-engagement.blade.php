@@ -15,228 +15,171 @@
                     <div class="breadcrumbs-top float-md-right">
                         <div class="breadcrumb-wrapper mr-1">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                <li class="breadcrumb-item"><a href="{{ route('dash') }}">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active">Form
+                                <li class="breadcrumb-item"><a href="{{ route('missionSustainabilityIndex') }}">Mission
+                                        Reports</a>
+                                </li>
+                                <li class="breadcrumb-item active">Scripture Engagement Data Form
                                 </li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <div class="content-body">
+            <div class="content-body">
+                <section class="tooltip-validations" id="tooltip-validation">
+                    <div class="row">
+                        <div class="col-12 mt-3 mb-1">
+                            <h4 class="content-header-title">Scripture Engagement Data Form</h4>
+                        </div>
+                    </div>
+                    <div class="row match-height">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <label class="card-title" for="inputDanger"><strong>Scripture
+                                            Engagement</strong></label>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <form class="needs-validation" novalidate="">
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Observing UBS Bible
+                                                day/Bible Reading Trivia</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-bible-day-volunteers-supporting">Volunteers engaged to
+                                                        support the works of the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-bible-day-volunteers-supporting">
+                                                </div>
 
-            <form class="col-12 mb-4">
-                <div class="row match-height mx-auto gx-3">
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Observing UBS Bible day/Bible Reading Trivia
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Volunteers engaged to support the works of the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-bible-day-volunteers-supporting">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Churches involved by the BS</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-bible-day-churches-involved">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Individuals involved by the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-bible-day-individuals-involved">
-                                </fieldset>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-bible-day-churches-involved">Churches involved by the
+                                                        BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-bible-day-churches-involved">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-bible-day-individuals-involved">Individuals involved by
+                                                        the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-bible-day-individuals-involved">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Jesus Film</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-volunteers-supporting">Volunteers engaged to
+                                                        support the works of the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-volunteers-supporting">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-training-held">Training held</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-training-held">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-workshops-held">Workshops held</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-workshops-held">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-meetings-held">Meetings held</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-meetings-held">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-scriptures-distributed">Scriptures
+                                                        Distributed</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-scriptures-distributed">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-churches-involved">Churches involved by the
+                                                        BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-churches-involved">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-jesus-film-individuals-involved">Individuals involved by
+                                                        the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-jesus-film-individuals-involved">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Trauma Healing</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-volunteers-supporting">Volunteers engaged
+                                                        to support the works of the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-volunteers-supporting">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-training-held">Training held</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-training-held">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-workshops-held">Workshops held</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-workshops-held">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-meetings-held">Meetings held</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-meetings-held">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-scriptures-distributed">Scriptures
+                                                        Distributed</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-scriptures-distributed">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-churches-involved">Churches involved by
+                                                        the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-churches-involved">
+                                                </div>
+
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="ubs-trauma-healing-individuals-involved">Individuals
+                                                        involved by the BS</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="ubs-trauma-healing-individuals-involved">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row match-height gx-3 col-12 w-100">
+                                                <button class="btn btn-primary px-2 py-1 mx-auto"
+                                                    type="submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Jesus Film
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Volunteers engaged to support the works of the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-jesus-film-volunteers-supporting">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Trainings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-jesus-film-trainings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Workshops held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-jesus-film-workshops-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Meetings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-jesus-film-meetings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Scriptures Distributed</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-jesus-film-scriptures-distributed">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Churches involved by the BS</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-jesus-film-churches-involved">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Individuals involved by the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-jesus-film-individuals-involved">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Trauma Healing
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Volunteers engaged to support the works of the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-trauma-healing-volunteers-supporting">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Trainings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-trauma-healing-trainings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Workshops held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-trauma-healing-workshops-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Meetings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-trauma-healing-meetings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Scriptures Distributed</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-trauma-healing-scriptures-distributed">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Churches involved by the BS</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-trauma-healing-churches-involved">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Individuals involved by the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-trauma-healing-individuals-involved">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Testimonials on the change experience</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-jesus-film-experience-testimonials">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Literacy Program
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Volunteers engaged to support the works of the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-literacy-program-volunteers-supporting">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Trainings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-literacy-program-trainings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Workshops held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-literacy-program-workshops-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Meetings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-literacy-program-meetings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Scriptures Distriuted</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-literacy-program-scriptures-distributed">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Churches involved by the BS</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-literacy-program-churches-involved">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Individuals involved by the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-literacy-program-individuals-involved">
-                                </fieldset>
-
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Other Bible Study Programs, Engagements and Projects
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Volunteers engaged to support the works of the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-other-programs-volunteers-supporting">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Trainings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-other-programs-trainings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Workshops held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-other-programs-workshops-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Meetings held</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-other-programs-meetings-held">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Scriptures Distributed</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-other-programs-scriptures-distributed">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Churches involved by the BS</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="ubs-other-programs-churches-involved">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Individuals involved by the BS</small>
-                                    <input type="number" step="1" class="form-control" id="ubs-other-programs-individuals-involved">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="row match-height gx-3 col-12 w-100">
-                    <button class="btn btn-primary px-2 py-1 mx-auto" type="submit">Submit</button>
-                </div>
-            </form>
+                </section>
+            </div>
         </div>
     </div>
 @endsection
