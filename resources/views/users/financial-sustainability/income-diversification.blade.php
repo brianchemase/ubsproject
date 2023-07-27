@@ -15,9 +15,11 @@
                     <div class="breadcrumbs-top float-md-right">
                         <div class="breadcrumb-wrapper mr-1">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                <li class="breadcrumb-item"><a href="{{ route('dash') }}">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active">Form
+                                <li class="breadcrumb-item"><a href="{{ route('financialSustainabilityIndex') }}">Finance Reports</a>
+                                </li>
+                                <li class="breadcrumb-item active">Income Diversification
                                 </li>
                             </ol>
                         </div>
@@ -27,7 +29,7 @@
             <div class="content-body">
 
 <section class="tooltip-validations" id="tooltip-validation">
-    <div class="row"> 
+    <div class="row">
         <div class="col-12 mt-3 mb-1">
             <h4 class="content-header-title">Income Diversification</h4>
         </div>
@@ -41,8 +43,9 @@
                 <div class="card-block">
                     <div class="card-body">
                         <form class="needs-validation" novalidate="">
+                            <h4 class="form-section"><i class="ft-clipboard"></i>Scripture Sales Revenue</h4>
                           <div class="form-row">
-                            
+
                             <div class="col-md-4 mb-3">
                                 <label for="validationTooltip01">Physical Channel Sales</label>
                                 <input type="text" class="form-control position-relative" placeholder="holder"  required="">
@@ -56,9 +59,9 @@
                               <label for="validationTooltip02">Other Online Marketplace Sales</label>
                               <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
-                           
+
                           </div>
-                           
+
                              <h4 class="form-section"><i class="ft-clipboard"></i> Membership Fees</h4>
                           <div class="form-row">
 
@@ -72,13 +75,13 @@
                               <input type="text" class="form-control position-relative" placeholder="holder"  required="">
                             </div>
 
-                        
+
                           </div>
 
-                        
+
                         <h4 class="form-section"><i class="ft-clipboard"></i> Fundraising</h4>
                           <div class="form-row">
-                        
+
                             <div class="col-md-4 mb-3">
                               <label for="validationTooltip02">Physical Fundraising</label>
                               <input type="text" class="form-control position-relative" placeholder="holder"  required="">
@@ -98,7 +101,7 @@
 
                           <h4 class="form-section"><i class="ft-clipboard"></i> Copyrights and Royalties</h4>
                           <div class="form-row">
-                        
+
                             <div class="col-md-8 mb-3">
                               <label for="validationTooltip02">Copyright and Royalty income</label>
                               <input type="text" class="form-control position-relative" placeholder="holder"  required="">
@@ -108,7 +111,7 @@
 
                           <h4 class="form-section"><i class="ft-clipboard"></i> Business and Rental Income</h4>
                           <div class="form-row">
-                        
+
                             <div class="col-md-8 mb-3">
                               <label for="validationTooltip02">Business and Rental Income</label>
                               <input type="text" class="form-control position-relative" placeholder="holder"  required="">
@@ -124,7 +127,7 @@
                 </div>
             </div>
         </div>
-      
+
     </div>
 </section>
             </div>

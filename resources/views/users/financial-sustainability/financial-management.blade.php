@@ -15,104 +15,112 @@
                     <div class="breadcrumbs-top float-md-right">
                         <div class="breadcrumb-wrapper mr-1">
                             <ol class="breadcrumb">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a>
+                                <li class="breadcrumb-item"><a href="{{ route('dash') }}">Home</a>
                                 </li>
-                                <li class="breadcrumb-item active">Form
+                                <li class="breadcrumb-item"><a href="{{ route('financialSustainabilityIndex') }}">Finance Reports</a>
+                                </li>
+                                <li class="breadcrumb-item active">Finance Management
                                 </li>
                             </ol>
                         </div>
                     </div>
                 </div>
             </div>
+
+
+            <div class="content-body">
+
+                <section class="tooltip-validations" id="tooltip-validation">
+                    <div class="row">
+                        <div class="col-12 mt-3 mb-1">
+                            <h4 class="content-header-title">Finance Management</h4>
+                        </div>
+                    </div>
+                    <div class="row match-height">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    <label class="card-title" for="inputDanger"><strong>Finance Management</strong></label>
+                                </div>
+                                <div class="card-block">
+                                    <div class="card-body">
+                                        <form class="needs-validation" novalidate="">
+                                            <h4 class="form-section"><i class="ft-clipboard"></i> Grant Balances</h4>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="unclaimed-grants">Unclaimed Grants</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="unclaimed-grants">
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="unutilised-grants">Unutilised Grants </label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="unutilised-grants">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section">
+                                                <i class="ft-clipboard"></i>UBS Current Account Balance
+                                            </h4>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="current-account-balance">Current Balance</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="current-account-balance">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section">
+                                                <i class="ft-clipboard"></i>Loans
+                                            </h4>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="bank-loans">Bank Loans</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="bank-loans">
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <label for="other-loanlabel">Other Loans</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="other-loans">
+                                                </div>
+                                            </div>
+
+                                            <h4 class="form-section">
+                                                <i class="ft-clipboard"></i>Bible Costings
+                                            </h4>
+
+                                            <div class="form-row">
+                                                <div class="form-group col-md-4 mb-3">
+                                                    <label for="printing-costs">Printing Costs</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="printing-costs">
+                                                </div>
+                                                <div class="form-group col-md-4 mb-3">
+                                                    <label for="shipping-costs">Shipping Costs</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="shipping-costs">
+                                                </div>
+                                                <div class="form-group col-md-4 mb-3">
+                                                    <label for="delivery-costs">Last Mile delivery Costs</label>
+                                                    <input type="number" step="1" class="form-control"
+                                                        id="delivery-costs">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row col-12">
+                                                <button class="btn btn-primary px-2 py-1 mx-auto"
+                                                    type="submit">Submit</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
-
-        <div class="content-body">
-
-            <form class="col-12 mb-4">
-                <div class="row match-height mx-auto gx-3">
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Grant Balances
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Unclaimed Grants</small>
-                                    <input type="number" step="1" class="form-control" id="unclaimed-grants">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Unutilised Grants </small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="unutilised-grants">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                UBS Current Account Balance
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Current Balance</small>
-                                    <input type="number" step="1" class="form-control" id="current-account-balance">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Loans
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Bank Loans</small>
-                                    <input type="number" step="1" class="form-control" id="bank-loans">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Other Loans</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="other-loans">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card col-xl-4 col-lg-6 col-md-12 ">
-                        <div class="card-block">
-                            <div class="card-header">
-                                Bible Costings
-                            </div>
-                            <div class="card-body">
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Printing Costs</small>
-                                    <input type="number" step="1" class="form-control"
-                                        id="printing-costs">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Shipping Costs</small>
-                                    <input type="number" step="1" class="form-control" id="shipping-costs">
-                                </fieldset>
-                                <fieldset class="form-group">
-                                    <small class="text-muted">Last Mile delivery Costs</small>
-                                    <input type="number" step="1" class="form-control" id="delivery-costs">
-                                </fieldset>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row match-height gx-3 col-12 w-100">
-                    <button class="btn btn-primary px-2 py-1 mx-auto" type="submit">Submit</button>
-                </div>
-
-
-            </form>
-        </div>
-    </div>
-
     @endsection
