@@ -20,11 +20,11 @@
             <li class=" nav-item"><a href="{{ route('missionSustainabilityIndex') }}"><i class="ft-droplet"></i><span class="menu-title"
                         data-i18n="">Mission Reports</span></a>
             </li>
-            <li class=" nav-item"><a href="cards.html"><i class="ft-layers"></i><span class="menu-title"
-                        data-i18n="">Cards</span></a>
+            <li class=" nav-item"><a href="#"><i class="ft-layers"></i><span class="menu-title"
+                        data-i18n="">Programme Reports</span></a>
             </li>
-            <li class=" nav-item"><a href="buttons.html"><i class="ft-box"></i><span class="menu-title"
-                        data-i18n="">Buttons</span></a>
+            <li class=" nav-item"><a href="{{ route('collaborationsIndex') }}"><i class="ft-box"></i><span class="menu-title"
+                        data-i18n="">Collaborations</span></a>
             </li>
             <li class=" nav-item"><a href="{{ route('userblankpage') }}"><i class="ft-bold"></i><span class="menu-title"
                         data-i18n="">Blank Page</span></a>

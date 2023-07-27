@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\CollaborationsController;
 use App\Http\Controllers\FinancialSustainabilityController;
 use App\Http\Controllers\MissionSustainabilityController;
 use App\Http\Controllers\UsersDashController;
@@ -79,6 +80,14 @@ Route::group(['prefix' => 'users'], function() {
 
     Route::get('/forms/scripture_engagement', [MissionSustainabilityController::class, 'scriptureEngagement'])->name('scriptureEngagementForm');
 
+
+    //*****collaborations ******//
+    //index page
+    Route::get('/collaborations', [CollaborationsController::class, 'index'])->name('collaborationsIndex');
+
+    //Membership and partnerships
+
+    Route::get('/forms/membership_and_partnerships', [CollaborationsController::class, 'membershipAndPartnership'])->name('membershipAndPartnership');
 }
 );
 
