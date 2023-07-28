@@ -60,7 +60,8 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio"
-                                                            name="registrationCertificate" id="registrationCertificateNo" checked>
+                                                            name="registrationCertificate" id="registrationCertificateNo"
+                                                            checked>
                                                         <label class="form-check-label" for="registrationCertificateNo">
                                                             No
                                                         </label>
@@ -71,7 +72,8 @@
                                                     <div class="custom-file">
                                                         <input type="file" class="custom-file-input"
                                                             id="registrationCertificateFile">
-                                                        <label class="custom-file-label" for="registrationCertificateFile">Choose
+                                                        <label class="custom-file-label"
+                                                            for="registrationCertificateFile">Choose
                                                             file</label>
                                                     </div>
                                                 </div>
@@ -83,15 +85,15 @@
                                                     <p>Have a constitution?</p>
 
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="constitution" id="constitutionYes">
+                                                        <input class="form-check-input" type="radio" name="constitution"
+                                                            id="constitutionYes">
                                                         <label class="form-check-label" for="constitutionYes">
                                                             Yes
                                                         </label>
                                                     </div>
                                                     <div class="form-check">
-                                                        <input class="form-check-input" type="radio"
-                                                            name="constitution" id="constitutionNo" checked>
+                                                        <input class="form-check-input" type="radio" name="constitution"
+                                                            id="constitutionNo" checked>
                                                         <label class="form-check-label" for="constitutionNo">
                                                             No
                                                         </label>
@@ -133,7 +135,8 @@
                                                     <div class="custom-file">
                                                         <input type="file" class="custom-file-input"
                                                             id="governanceCharterFile">
-                                                        <label class="custom-file-label" for="governanceCharterFile">Choose
+                                                        <label class="custom-file-label"
+                                                            for="governanceCharterFile">Choose
                                                             file</label>
                                                     </div>
                                                 </div>
@@ -153,7 +156,8 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="radio"
-                                                            name="strategicPlanCharter" id="strategicPlanCharterNo" checked>
+                                                            name="strategicPlanCharter" id="strategicPlanCharterNo"
+                                                            checked>
                                                         <label class="form-check-label" for="strategicPlanCharterNo">
                                                             No
                                                         </label>
@@ -164,10 +168,404 @@
                                                     <div class="custom-file">
                                                         <input type="file" class="custom-file-input"
                                                             id="strategicPlanCharterFile">
-                                                        <label class="custom-file-label" for="strategicPlanCharterFile">Choose
+                                                        <label class="custom-file-label"
+                                                            for="strategicPlanCharterFile">Choose
                                                             file</label>
                                                     </div>
                                                 </div>
+                                            </div>
+
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Lead Compliance </h4>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">File society's returns</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have tax returns receipt?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="taxComplianceCertificate"
+                                                            id="taxComplianceCertificateYes">
+                                                        <label class="form-check-label" for="taxComplianceCertificateYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="taxComplianceCertificate"
+                                                            id="taxComplianceCertificateNo" checked>
+                                                        <label class="form-check-label" for="taxComplianceCertificateNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="taxComplianceCertificateFile">
+                                                        <label class="custom-file-label"
+                                                            for="taxComplianceCertificateFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Compliance with child protection policy</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have child protection policy?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="childProtectionCertificate"
+                                                            id="childProtectionCertificateYes">
+                                                        <label class="form-check-label"
+                                                            for="childProtectionCertificateYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="childProtectionCertificate"
+                                                            id="childProtectionCertificateNo" checked>
+                                                        <label class="form-check-label"
+                                                            for="childProtectionCertificateNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="childProtectionCertificateFile">
+                                                        <label class="custom-file-label"
+                                                            for="childProtectionCertificateFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Support whistle blowing  policy</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have whistle blowing policy?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="whistleBlowingCompliance"
+                                                            id="whistleBlowingComplianceYes">
+                                                        <label class="form-check-label"
+                                                            for="whistleBlowingComplianceYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="whistleBlowingCompliance"
+                                                            id="whistleBlowingComplianceNo" checked>
+                                                        <label class="form-check-label"
+                                                            for="whistleBlowingComplianceNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="whistleBlowingComplianceFile">
+                                                        <label class="custom-file-label"
+                                                            for="whistleBlowingComplianceFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Comply with anti-corruption regulations</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have anti-corruption regulations?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="antiCorruptionCompliance"
+                                                            id="antiCorruptionComplianceYes">
+                                                        <label class="form-check-label"
+                                                            for="antiCorruptionComplianceYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="antiCorruptionCompliance"
+                                                            id="antiCorruptionComplianceNo" checked>
+                                                        <label class="form-check-label"
+                                                            for="antiCorruptionComplianceNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="antiCorruptionComplianceFile">
+                                                        <label class="custom-file-label"
+                                                            for="antiCorruptionComplianceFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Compliance with anti-money laundering laws</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have anti-money laundering policy?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="antiMoneyLaunderingCompliance"
+                                                            id="antiMoneyLaunderingComplianceYes">
+                                                        <label class="form-check-label"
+                                                            for="antiMoneyLaunderingComplianceYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="antiMoneyLaunderingCompliance"
+                                                            id="antiMoneyLaunderingComplianceNo" checked>
+                                                        <label class="form-check-label"
+                                                            for="antiMoneyLaunderingComplianceNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="antiMoneyLaunderingComplianceFile">
+                                                        <label class="custom-file-label"
+                                                            for="antiMoneyLaunderingComplianceFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <h4 class="form-section"><i class="ft-clipboard"></i>Clear Organisation Structure Compliance </h4>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Independent board with different church affiliations</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have board with different church affiliations?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="independentBoardCompliance"
+                                                            id="independentBoardComplianceYes">
+                                                        <label class="form-check-label" for="independentBoardComplianceYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="independentBoardCompliance"
+                                                            id="independentBoardComplianceNo" checked>
+                                                        <label class="form-check-label" for="independentBoardComplianceNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="independentBoardComplianceFile">
+                                                        <label class="custom-file-label"
+                                                            for="independentBoardComplianceFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Programs/ Project Manager/ Director</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have a programs manager, Project manager or Director?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="projectManager"
+                                                            id="projectManagerYes">
+                                                        <label class="form-check-label" for="projectManagerYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="projectManager"
+                                                            id="projectManagerNo" checked>
+                                                        <label class="form-check-label" for="projectManagerNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="projectManagerFile">
+                                                        <label class="custom-file-label"
+                                                            for="projectManagerFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Translation Consultants</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have translation consultants?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="translationConsultants"
+                                                            id="translationConsultantsYes">
+                                                        <label class="form-check-label" for="translationConsultantsYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="translationConsultants"
+                                                            id="translationConsultantsNo" checked>
+                                                        <label class="form-check-label" for="translationConsultantsNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="translationConsultantsFile">
+                                                        <label class="custom-file-label"
+                                                            for="translationConsultantsFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Communications and Marketing Consultant</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have a communications and marketing consultant?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="communicationsAndMarketingConsultant"
+                                                            id="communicationsAndMarketingConsultantYes">
+                                                        <label class="form-check-label" for="communicationsAndMarketingConsultantYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="communicationsAndMarketingConsultant"
+                                                            id="communicationsAndMarketingConsultantNo" checked>
+                                                        <label class="form-check-label" for="communicationsAndMarketingConsultantNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="communicationsAndMarketingConsultantFile">
+                                                        <label class="custom-file-label"
+                                                            for="communicationsAndMarketingConsultantFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Supply Chain Officer</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have supply chain officer?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="supplyChainOfficer"
+                                                            id="supplyChainOfficerYes">
+                                                        <label class="form-check-label" for="supplyChainOfficerYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="supplyChainOfficer"
+                                                            id="supplyChainOfficerNo" checked>
+                                                        <label class="form-check-label" for="supplyChainOfficerNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="supplyChainOfficerFile">
+                                                        <label class="custom-file-label"
+                                                            for="supplyChainOfficerFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row">
+                                                <h3 class="col-12">Fundraising Officer</h3>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Have fundraising officer?</p>
+
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="fundraisingOfficer"
+                                                            id="fundraisingOfficerYes">
+                                                        <label class="form-check-label" for="fundraisingOfficerYes">
+                                                            Yes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="radio"
+                                                            name="fundraisingOfficer"
+                                                            id="fundraisingOfficerNo" checked>
+                                                        <label class="form-check-label" for="fundraisingOfficerNo">
+                                                            No
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-md-6 mb-3">
+                                                    <p>Attach PDF file</p>
+                                                    <div class="custom-file">
+                                                        <input type="file" class="custom-file-input"
+                                                            id="fundraisingOfficerFile">
+                                                        <label class="custom-file-label"
+                                                            for="fundraisingOfficerFile">Choose
+                                                            file</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-row match-height gx-3 col-12 w-100">
+                                                <button class="btn btn-primary px-2 py-1 mx-auto"
+                                                    type="submit">Submit</button>
                                             </div>
 
                                         </form>
