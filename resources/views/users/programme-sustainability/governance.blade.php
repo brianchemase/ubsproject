@@ -47,7 +47,7 @@
                                             <h4 class="form-section"><i class="ft-clipboard"></i>Corporate Governance
                                                 Compliance </h4>
                                             <div class="form-row">
-                                                <h3 class="col-12">BS registration as a legal entity</h3>
+                                                <h5 class="col-12">BS registration as a legal entity</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have a certificate of registration?</p>
 
@@ -80,7 +80,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">BS with constitution to guide operations</h3>
+                                                <h5 class="col-12">BS with constitution to guide operations</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have a constitution?</p>
 
@@ -111,7 +111,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">BS with board corporate governance charter</h3>
+                                                <h5 class="col-12">BS with board corporate governance charter</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have a governance by laws/charter?</p>
 
@@ -143,7 +143,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">BS with Strategic plan</h3>
+                                                <h5 class="col-12">BS with Strategic plan</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have a strategic plan?</p>
 
@@ -179,7 +179,7 @@
                                             <h4 class="form-section"><i class="ft-clipboard"></i>Lead Compliance </h4>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">File society's returns</h3>
+                                                <h5 class="col-12">File society's returns</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have tax returns receipt?</p>
 
@@ -213,7 +213,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Compliance with child protection policy</h3>
+                                                <h5 class="col-12">Compliance with child protection policy</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have child protection policy?</p>
 
@@ -249,7 +249,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Support whistle blowing  policy</h3>
+                                                <h5 class="col-12">Support whistle blowing  policy</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have whistle blowing policy?</p>
 
@@ -285,7 +285,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Comply with anti-corruption regulations</h3>
+                                                <h5 class="col-12">Comply with anti-corruption regulations</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have anti-corruption regulations?</p>
 
@@ -321,7 +321,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Compliance with anti-money laundering laws</h3>
+                                                <h5 class="col-12">Compliance with anti-money laundering laws</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have anti-money laundering policy?</p>
 
@@ -360,7 +360,7 @@
                                             <h4 class="form-section"><i class="ft-clipboard"></i>Clear Organisation Structure Compliance </h4>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Independent board with different church affiliations</h3>
+                                                <h5 class="col-12">Independent board with different church affiliations</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have board with different church affiliations?</p>
 
@@ -394,7 +394,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Programs/ Project Manager/ Director</h3>
+                                                <h5 class="col-12">Programs / Project Manager / Director</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have a programs manager, Project manager or Director?</p>
 
@@ -428,7 +428,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Translation Consultants</h3>
+                                                <h5 class="col-12">Translation Consultants</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have translation consultants?</p>
 
@@ -462,7 +462,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Communications and Marketing Consultant</h3>
+                                                <h5 class="col-12">Communications and Marketing Consultant</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have a communications and marketing consultant?</p>
 
@@ -496,7 +496,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Supply Chain Officer</h3>
+                                                <h5 class="col-12">Supply Chain Officer</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have supply chain officer?</p>
 
@@ -530,7 +530,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <h3 class="col-12">Fundraising Officer</h3>
+                                                <h5 class="col-12">Fundraising Officer</h5>
                                                 <div class="form-group col-md-6 mb-3">
                                                     <p>Have fundraising officer?</p>
 
