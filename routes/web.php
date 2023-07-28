@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminsController;
 use App\Http\Controllers\CollaborationsController;
 use App\Http\Controllers\FinancialSustainabilityController;
 use App\Http\Controllers\MissionSustainabilityController;
+use App\Http\Controllers\ProgramSustainabilityController;
 use App\Http\Controllers\UsersDashController;
 
 /*
@@ -92,6 +93,13 @@ Route::group(['prefix' => 'users'], function() {
     //Membership and partnerships
 
     Route::get('/forms/publicity_and_communication', [CollaborationsController::class, 'publicityAndCommunication'])->name('publicityAndCommunication');
+
+    //*****Program sustainability ******//
+    //governance form
+    Route::get('/forms/governance', [ProgramSustainabilityController::class, 'governanceForm'])->name('governanceForm');
+
+
+
 }
 );
 

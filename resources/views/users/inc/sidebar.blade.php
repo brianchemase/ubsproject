@@ -35,8 +35,14 @@
                     </li>
                 </ul>
             </li>
-            <li class=" nav-item"><a href="#"><i class="ft-layers"></i><span class="menu-title"
+            <li class=" nav-item has-sub"><a href="#"><i class="ft-layers"></i><span class="menu-title"
                         data-i18n="">Programme Reports</span></a>
+                        <ul class="menu-content">
+                            <li><a class="menu-item" href="{{ route('governanceForm') }}">Governance</a>
+                            </li>
+                            <li><a class="menu-item" href="#">Leadership</a>
+                            </li>
+                        </ul>
             </li>
             <li class=" nav-item has-sub"><a href="{{ route('collaborationsIndex') }}"><i class="ft-box"></i><span
                         class="menu-title" data-i18n="">Collaborations</span></a>
