@@ -3,7 +3,7 @@
     <div class="navbar-header">
         <ul class="nav navbar-nav flex-row">
             <li class="nav-item mr-auto"><a class="navbar-brand" href="{{ route('dash') }}"><img class="brand-logo"
-                        alt="Chameleon admin logo" src="{{ asset('userdash/theme-assets/images/logo/logo.png') }}" />
+                        alt="UBS-logo logo" src="{{ asset('userdash/logo/ubs-logo-light.png') }}" />
                     <h3 class="brand-text">UBS Users</h3>
                 </a></li>
             <li class="nav-item d-md-none"><a class="nav-link close-navbar"><i class="ft-x"></i></a></li>
