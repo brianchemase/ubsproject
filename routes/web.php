@@ -98,6 +98,8 @@ Route::group(['prefix' => 'users'], function() {
     //governance form
     Route::get('/forms/governance', [ProgramSustainabilityController::class, 'governanceForm'])->name('governanceForm');
 
+    //leadership form
+    Route::get('/forms/leadership', [ProgramSustainabilityController::class, 'leadershipForm'])->name('leadershipForm');
 
 
 }

@@ -40,7 +40,7 @@
                         <ul class="menu-content">
                             <li><a class="menu-item" href="{{ route('governanceForm') }}">Governance</a>
                             </li>
-                            <li><a class="menu-item" href="#">Leadership</a>
+                            <li><a class="menu-item" href="{{ route('leadershipForm') }}">Leadership</a>
                             </li>
                         </ul>
             </li>
@@ -66,8 +66,6 @@
                         class="ft-book"></i><span class="menu-title" data-i18n="">Documentation</span></a>
             </li>
         </ul>
-    </div><a class="btn btn-danger btn-block btn-glow btn-upgrade-pro mx-1"
-        href="https://themeselection.com/products/chameleon-admin-modern-bootstrap-webapp-dashboard-html-template-ui-kit/"
-        target="_blank">Download PRO!</a>
+    </div>
     <div class="navigation-background"></div>
 </div>
