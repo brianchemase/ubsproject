@@ -6,6 +6,7 @@ use App\Http\Controllers\CollaborationsController;
 use App\Http\Controllers\FinancialSustainabilityController;
 use App\Http\Controllers\MissionSustainabilityController;
 use App\Http\Controllers\ProgramSustainabilityController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\UsersDashController;
 
 /*
@@ -22,6 +23,8 @@ use App\Http\Controllers\UsersDashController;
 Route::get('/', function () {
     return view('homepage.index');
 });
+
+
 
 
 Route::group(['prefix' => 'admins'], function() {
@@ -105,3 +108,22 @@ Route::group(['prefix' => 'users'], function() {
 }
 );
 
+
+
+
+//**** Authentication ****//
+Route::group(['prefix'=>'auth'], function(){
+
+    //registration form
+    Route::get('/register', [UserController::class, 'register'])->name('register');
+
+    //store new user data
+
+    Route::post('/register', [UserController::class, 'store'])->name('registerUser');
+
+    //login form
+
+    Route::get('/login', [UserController::class, 'login'])->name('login');
+
+
+});

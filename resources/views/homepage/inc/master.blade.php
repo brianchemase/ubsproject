@@ -41,8 +41,7 @@
     <!-- footer section -->
     <footer class="container-fluid footer_section">
         <p>
-            &copy; 2019 All Rights Reserved By
-            <a href="https://html.design/">Free Html Templates</a>
+            &copy; 2023 UBS
         </p>
     </footer>
     <!-- footer section -->
