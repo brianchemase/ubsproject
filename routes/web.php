@@ -125,5 +125,13 @@ Route::group(['prefix'=>'auth'], function(){
 
     Route::get('/login', [UserController::class, 'login'])->name('login');
 
+    //authenticate user
+
+    Route::post('/authenticate_user', [UserController::class, 'authenticate'])->name('authenticateUser');
+
+    //logout user
+
+    Route::post('/logout', [UserController::class, 'logout'])->name('logoutUser');
+
 
 });

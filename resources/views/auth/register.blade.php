@@ -1,4 +1,6 @@
-@extends('auth.inc.layout')
+@extends('auth.components.layout')
+
+@include('auth.components.flash-message')
 
 @section('content')
 

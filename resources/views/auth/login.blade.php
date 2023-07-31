@@ -1,4 +1,4 @@
-@extends('auth.inc.layout')
+@extends('auth.components.layout')
 
 @section('content')
 
@@ -9,7 +9,8 @@
                 <img src="{{ asset('auth/images/img-01.png')}}" alt="IMG">
             </div>
 
-            <form class="login100-form validate-form">
+            <form class="login100-form validate-form" method="POST" action="{{ route('authenticateUser') }}">
+                @csrf
                 <span class="login100-form-title">
                     Member Login
                 </span>

@@ -22,6 +22,9 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('auth/css/util.css')}}">
     <link rel="stylesheet" type="text/css" href="{{ asset('auth/css/main.css')}}">
     <!--===============================================================================================-->
+    <!-- Alpine js -->
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <!--===============================================================================================-->
 </head>
 
 <body>
@@ -46,6 +49,8 @@
     </script>
     <!--===============================================================================================-->
     <script src="{{ asset('auth/js/main.js')}}"></script>
+
+
 
 </body>
 
