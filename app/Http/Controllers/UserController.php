@@ -42,7 +42,7 @@ class UserController extends Controller
 
         auth() -> login($user);
 
-        return redirect('dash')->with('message', 'Account created successfully!');
+        return redirect('/users/')->with('message', 'Account created successfully!');
     }
 
     public function authenticate(Request $request){
@@ -54,7 +54,7 @@ class UserController extends Controller
         if(auth()->attempt($formFields)){
             $request->session()->regenerate();
 
-            return redirect('dash');
+            return redirect('/users/');
         }
 
         return back()->withErrors(['email'=>'Invalid credentials'])->onlyInput('email');
@@ -67,6 +67,6 @@ class UserController extends Controller
 
         $request->session()->regenerateToken();
 
-        return redirect('login');
+        return redirect('/auth/login');
     }
 }

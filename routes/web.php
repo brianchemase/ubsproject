@@ -20,9 +20,11 @@ use App\Http\Controllers\UsersDashController;
 |
 */
 
+
 Route::get('/', function () {
-    return view('homepage.index');
+    return view('HOME');
 });
+
 
 
 
@@ -55,7 +57,7 @@ Route::group(['prefix' => 'users'], function() {
     //******* financial sustainability *******//
     //index page
 
-    Route::get('/financial_sustainability/', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
+    Route::get('/financial_sustainability', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
 
     //income diversification form
 
