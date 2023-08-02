@@ -40,27 +40,36 @@ class UserController extends Controller
 
         //login
 
-        auth() -> login($user);
+        auth()->login($user);
 
         return redirect('/users/')->with('message', 'Account created successfully!');
     }
 
-    public function authenticate(Request $request){
+    public function authenticate(Request $request)
+    {
         $formFields = $request->validate([
             'email' => ['required', 'email'],
             'password' => 'required'
         ]);
 
-        if(auth()->attempt($formFields)){
-            $request->session()->regenerate();
-
-            return redirect('/users/');
+        if (auth()->attempt($formFields)) {
+            if (auth()->user()->role == 'admin') {
+                $request->session()->regenerate();
+                return redirect()->route('admindash');
+            } else if (auth()->user()->role == 'user') {
+                $request->session()->regenerate();
+                return redirect()->route('dash');
+            } else {
+                $request->session()->regenerate();
+                return redirect()->route('supervisorhome');
+            }
+        } else {
+            return back()->withErrors(['email' => 'Invalid credentials'])->onlyInput('email');
         }
-
-        return back()->withErrors(['email'=>'Invalid credentials'])->onlyInput('email');
     }
 
-    public function logout(Request $request){
+    public function logout(Request $request)
+    {
         auth()->logout();
 
         $request->session()->invalidate();
