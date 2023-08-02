@@ -30,7 +30,7 @@ Route::get('/supervisors', function () {
 
 
 
-Route::middleware(['auth', 'user-role:admin'])->group(['prefix' => 'admins'], function() {
+Route::group(['prefix' => 'admins'], function() {
 
     Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash');
 
@@ -45,7 +45,7 @@ Route::middleware(['auth', 'user-role:admin'])->group(['prefix' => 'admins'], fu
 
 
 
-Route::middleware(['auth', 'user-role:user'])->group(['prefix' => 'users'], function() {
+Route::group(['prefix' => 'users'], function() {
 
     Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash');
 
