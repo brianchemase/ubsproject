@@ -42,7 +42,7 @@ class UserController extends Controller
 
         auth()->login($user);
 
-        return redirect('/users/')->with('message', 'Account created successfully!');
+        return redirect('/users')->with('message', 'Account created successfully!');
     }
 
     public function authenticate(Request $request)
