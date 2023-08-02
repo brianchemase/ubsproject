@@ -40,12 +40,13 @@ class UserController extends Controller
 
         //login
 
-        auth() -> login($user);
+        auth()->login($user);
 
         return redirect('/users/')->with('message', 'Account created successfully!');
     }
 
-    public function authenticate(Request $request){
+    public function authenticate(Request $request)
+    {
         $formFields = $request->validate([
             'email' => ['required', 'email'],
             'password' => 'required'
@@ -54,13 +55,12 @@ class UserController extends Controller
         if(auth()->attempt($formFields)){
             $request->session()->regenerate();
 
-            return redirect('/users/');
+            return redirect('dash');
         }
-
-        return back()->withErrors(['email'=>'Invalid credentials'])->onlyInput('email');
     }
 
-    public function logout(Request $request){
+    public function logout(Request $request)
+    {
         auth()->logout();
 
         $request->session()->invalidate();
