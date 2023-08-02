@@ -23,6 +23,8 @@ use App\Http\Controllers\UsersDashController;
 
 Route::get('/supervisors', function () {
     return view('homepage.index')->name('supervisorhome');
+Route::get('/supervisors', function () {
+    return view('homepage.index')->name('supervisorhome');
 });
 
 
@@ -45,7 +47,7 @@ Route::group(['prefix' => 'admins'], function() {
 
 
 
-Route::group(['prefix' => 'users'], function() {
+Route::middleware(['auth', 'user-role:user'])->group(['prefix' => 'users'], function() {
 
     Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash');
 
