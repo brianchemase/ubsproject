@@ -27,9 +27,10 @@ Route::get('/', function(){
 
 
 
+
 Route::group(['prefix' => 'admins'], function() {
 
-    Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash');
+    Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash')->middleware(['auth','user-role:admin']);
 
     Route::get('/forms', [AdminsController::class, 'dashboardforms'])->name('adminforms');
 
@@ -44,7 +45,7 @@ Route::group(['prefix' => 'admins'], function() {
 
 Route::group(['prefix' => 'users'], function() {
 
-    Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash');
+    Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash')->middleware(['auth','user-role:user']);
 
     Route::get('/forms', [UsersDashController::class, 'userforms'])->name('useradminforms');
 

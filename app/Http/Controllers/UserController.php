@@ -54,13 +54,20 @@ class UserController extends Controller
             'password' => 'required'
         ]);
 
-        if(auth()->attempt($formFields)){
-            $request->session()->regenerate();
-
-            return redirect('/users');
+        if (auth()->attempt($formFields)) {
+            if (auth()->user()->role == 'user') {
+                $request->session()->regenerate();
+                return redirect('/users');
+            } else if (auth()->user()->role == 'admin' || auth()->user()->role == 'supervisor') {
+                $request->session()->regenerate();
+                return redirect('/admins');
+            } else{
+                $request->session()->regenerate();
+                return redirect('/users');
+            }
         }
 
-        return back()->withErrors(['email'=>'Invalid credentials'])->onlyInput('email');
+        return back()->withErrors(['email' => 'Invalid credentials'])->onlyInput('email');
     }
 
 
