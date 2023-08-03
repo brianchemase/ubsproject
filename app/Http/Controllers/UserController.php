@@ -59,6 +59,8 @@ class UserController extends Controller
 
             return redirect('/users');
         }
+
+        return back()->withErrors(['email'=>'Invalid credentials'])->onlyInput('email');
     }
 
 

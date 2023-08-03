@@ -22,7 +22,7 @@ use App\Http\Controllers\UsersDashController;
 
 
 Route::get('/', function(){
-    return view('/users');
+    return view('auth.login');
 });
 
 

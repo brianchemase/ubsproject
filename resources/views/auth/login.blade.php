@@ -23,6 +23,10 @@
                     </span>
                 </div>
 
+                @error('email')
+                    <p class="text-danger text-center my-1">{{ $message }}</p>
+                @enderror
+
                 <div class="wrap-input100 validate-input" data-validate = "Password is required">
                     <input class="input100" type="password" name="password" placeholder="Password">
                     <span class="focus-input100"></span>
@@ -30,6 +34,10 @@
                         <i class="fa fa-lock" aria-hidden="true"></i>
                     </span>
                 </div>
+
+                @error('password')
+                    <p class="text-danger text-center my-1">{{ $message }}</p>
+                @enderror
 
                 <div class="container-login100-form-btn">
                     <button class="login100-form-btn">
