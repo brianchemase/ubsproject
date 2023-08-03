@@ -46,8 +46,7 @@ class UserController extends Controller
         return redirect('/users')->with('message', 'Account created successfully!');
     }
 
-    public function authenticate(Request $request)
-    {
+
     public function authenticate(Request $request)
     {
         $formFields = $request->validate([
@@ -62,8 +61,7 @@ class UserController extends Controller
         }
     }
 
-    public function logout(Request $request)
-    {
+
     public function logout(Request $request)
     {
         auth()->logout();

@@ -21,14 +21,9 @@ use App\Http\Controllers\UsersDashController;
 */
 
 
-Route::get('/supervisors', function () {
-    return view('homepage.index')->name('supervisorhome');
-Route::get('/supervisors', function () {
-    return view('homepage.index')->name('supervisorhome');
+Route::get('/', function(){
+    return view('/users');
 });
-
-
-
 
 
 
