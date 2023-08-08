@@ -21,101 +21,103 @@ use App\Http\Controllers\UsersDashController;
 */
 
 
-Route::get('/', function(){
+Route::get('/', function () {
     return view('auth.login');
 });
 
-Route::get('/supervisor', function(){
+Route::get('/supervisor', function () {
     return view('homepage.index');
 });
 
 
-Route::group(['prefix' => 'admins'], function() {
+Route::group(
+    ['prefix' => 'admins'],
+    function () {
 
-    Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash')->middleware(['auth','user-role:admin', 'user-role:supervisor']);
+        Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash')->middleware(['auth']);
 
-    Route::get('/forms', [AdminsController::class, 'dashboardforms'])->name('adminforms');
+        Route::get('/forms', [AdminsController::class, 'dashboardforms'])->name('adminforms');
 
-    Route::get('/blank', [AdminsController::class, 'blankpage'])->name('blankpage');
+        Route::get('/blank', [AdminsController::class, 'blankpage'])->name('blankpage');
 
-    Route::get('/table', [AdminsController::class, 'tablepage'])->name('tablepage');
-}
+        Route::get('/table', [AdminsController::class, 'tablepage'])->name('tablepage');
+    }
 );
 
 
 
 
-Route::group(['prefix' => 'users'], function() {
+Route::group(
+    ['prefix' => 'users'],
+    function () {
 
-    Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash')->middleware(['auth','user-role:user']);
+        Route::get('/', [UsersDashController::class, 'dashboard'])->name('dash')->middleware('auth');
 
-    Route::get('/forms', [UsersDashController::class, 'userforms'])->name('useradminforms');
+        Route::get('/forms', [UsersDashController::class, 'userforms'])->name('useradminforms');
 
-    Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('userblankpage');
+        Route::get('/blank', [UsersDashController::class, 'blankpage'])->name('userblankpage');
 
-    Route::get('/table', [UsersDashController::class, 'tablepage'])->name('usertablepage');
+        Route::get('/table', [UsersDashController::class, 'tablepage'])->name('usertablepage');
 
-    //******* financial sustainability *******//
-    //index page
+        //******* financial sustainability *******//
+        //index page
 
-    Route::get('/financial_sustainability', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
+        Route::get('/financial_sustainability', [FinancialSustainabilityController::class, 'index'])->name('financialSustainabilityIndex');
 
-    //income diversification form
+        //income diversification form
 
-    Route::get('/forms/income_diversification', [FinancialSustainabilityController::class, 'incomediversificationform'])->name('incomeDiversificationForm');
+        Route::get('/forms/income_diversification', [FinancialSustainabilityController::class, 'incomediversificationform'])->name('incomeDiversificationForm');
 
-    //Financial Management
+        //Financial Management
 
-    Route::get('/forms/finance_management', [FinancialSustainabilityController::class, 'financeManagementForm'])->name('financeManagementForm');
-
-
-
-    //*****mission sustainability ******//
-    //index page
-
-    Route::get('/mission_sustainability', [MissionSustainabilityController::class, 'index'])->name('missionSustainabilityIndex');
-
-    //Bible translation
-
-    Route::get('/forms/bible-translation', [MissionSustainabilityController::class, 'bibleTranslation'])->name('bibleTranslationForm');
-
-    //Bible publishing and Distribution
-
-    Route::get('/forms/bible-publishing-and-translation', [MissionSustainabilityController::class, 'biblePublishingAndDistribution'])->name('biblePublishingAndDistributionForm');
-
-    //Scripture Engagement
-
-    Route::get('/forms/scripture_engagement', [MissionSustainabilityController::class, 'scriptureEngagement'])->name('scriptureEngagementForm');
+        Route::get('/forms/finance_management', [FinancialSustainabilityController::class, 'financeManagementForm'])->name('financeManagementForm');
 
 
-    //*****collaborations ******//
-    //index page
-    Route::get('/collaborations', [CollaborationsController::class, 'index'])->name('collaborationsIndex');
 
-    //Membership and partnerships
+        //*****mission sustainability ******//
+        //index page
 
-    Route::get('/forms/membership_and_partnerships', [CollaborationsController::class, 'membershipAndPartnership'])->name('membershipAndPartnership');
+        Route::get('/mission_sustainability', [MissionSustainabilityController::class, 'index'])->name('missionSustainabilityIndex');
 
-    //Membership and partnerships
+        //Bible translation
 
-    Route::get('/forms/publicity_and_communication', [CollaborationsController::class, 'publicityAndCommunication'])->name('publicityAndCommunication');
+        Route::get('/forms/bible-translation', [MissionSustainabilityController::class, 'bibleTranslation'])->name('bibleTranslationForm');
 
-    //*****Program sustainability ******//
-    //governance form
-    Route::get('/forms/governance', [ProgramSustainabilityController::class, 'governanceForm'])->name('governanceForm');
+        //Bible publishing and Distribution
 
-    //leadership form
-    Route::get('/forms/leadership', [ProgramSustainabilityController::class, 'leadershipForm'])->name('leadershipForm');
+        Route::get('/forms/bible-publishing-and-translation', [MissionSustainabilityController::class, 'biblePublishingAndDistribution'])->name('biblePublishingAndDistributionForm');
+
+        //Scripture Engagement
+
+        Route::get('/forms/scripture_engagement', [MissionSustainabilityController::class, 'scriptureEngagement'])->name('scriptureEngagementForm');
 
 
-}
+        //*****collaborations ******//
+        //index page
+        Route::get('/collaborations', [CollaborationsController::class, 'index'])->name('collaborationsIndex');
+
+        //Membership and partnerships
+
+        Route::get('/forms/membership_and_partnerships', [CollaborationsController::class, 'membershipAndPartnership'])->name('membershipAndPartnership');
+
+        //Membership and partnerships
+
+        Route::get('/forms/publicity_and_communication', [CollaborationsController::class, 'publicityAndCommunication'])->name('publicityAndCommunication');
+
+        //*****Program sustainability ******//
+        //governance form
+        Route::get('/forms/governance', [ProgramSustainabilityController::class, 'governanceForm'])->name('governanceForm');
+
+        //leadership form
+        Route::get('/forms/leadership', [ProgramSustainabilityController::class, 'leadershipForm'])->name('leadershipForm');
+    }
 );
 
 
 
 
 //**** Authentication ****//
-Route::group(['prefix'=>'auth'], function(){
+Route::group(['prefix' => 'auth'], function () {
 
     //registration form
     Route::get('/register', [UserController::class, 'register'])->name('register');
@@ -135,19 +137,16 @@ Route::group(['prefix'=>'auth'], function(){
     //logout user
 
     Route::post('/logout', [UserController::class, 'logout'])->name('logoutUser');
-
-
 });
 
 
 //******* Role management *********//
 
-Route::group(['prefix'=>'role_management'], function(){
+Route::group(['prefix' => 'role_management'], function () {
 
-    Route::get('/',[RoleController::class, 'index']);
+    Route::get('/', [RoleController::class, 'index']);
 
     Route::resource('/roles', RoleController::class);
 
     Route::resource('/permissions', PermissionController::class);
-
 });
