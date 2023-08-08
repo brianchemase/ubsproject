@@ -25,12 +25,14 @@ Route::get('/', function(){
     return view('auth.login');
 });
 
-
+Route::get('/supervisor', function(){
+    return view('homepage.index');
+});
 
 
 Route::group(['prefix' => 'admins'], function() {
 
-    Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash')->middleware(['auth','user-role:admin']);
+    Route::get('/', [AdminsController::class, 'dashboard'])->name('admindash')->middleware(['auth','user-role:admin', 'user-role:supervisor']);
 
     Route::get('/forms', [AdminsController::class, 'dashboardforms'])->name('adminforms');
 
@@ -134,5 +136,18 @@ Route::group(['prefix'=>'auth'], function(){
 
     Route::post('/logout', [UserController::class, 'logout'])->name('logoutUser');
 
+
+});
+
+
+//******* Role management *********//
+
+Route::group(['prefix'=>'role_management'], function(){
+
+    Route::get('/',[RoleController::class, 'index']);
+
+    Route::resource('/roles', RoleController::class);
+
+    Route::resource('/permissions', PermissionController::class);
 
 });

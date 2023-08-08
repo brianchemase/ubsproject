@@ -41,7 +41,6 @@ class UserController extends Controller
         //login
 
         auth()->login($user);
-        auth()->login($user);
 
         return redirect('/users')->with('message', 'Account created successfully!');
     }
@@ -55,18 +54,9 @@ class UserController extends Controller
         ]);
 
         if (auth()->attempt($formFields)) {
-            if (auth()->user()->role == 'user') {
-                $request->session()->regenerate();
-                return redirect('/users');
-            } else if (auth()->user()->role == 'admin' || auth()->user()->role == 'supervisor') {
-                $request->session()->regenerate();
-                return redirect('/admins');
-            } else{
-                $request->session()->regenerate();
-                return redirect('/users');
-            }
+            $request->session()->regenerate();
+            return redirect('/users');
         }
-
         return back()->withErrors(['email' => 'Invalid credentials'])->onlyInput('email');
     }
 
