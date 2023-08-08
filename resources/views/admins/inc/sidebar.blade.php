@@ -32,6 +32,23 @@
             </li>
 
             <li class="sidebar-header">
+                Permissions Management
+            </li>
+
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="/role_management/permissions/create">
+                    <i class="align-middle"data-feather="user"></i> <span class="align-middle">Create permissions</span>
+                </a>
+            </li>
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="#">
+                    <i class="align-middle" data-feather="airplay"></i> <span class="align-middle">Manage
+                        permissions</span>
+                </a>
+            </li>
+
+            <li class="sidebar-header">
                 Bill Management
             </li>
             <li class="sidebar-item">

@@ -5,6 +5,7 @@ use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminsController;
 use App\Http\Controllers\UsersDashController;
+use App\Http\Controllers\PermissionController;
 use App\Http\Controllers\CollaborationsController;
 use App\Http\Controllers\MissionSustainabilityController;
 use App\Http\Controllers\ProgramSustainabilityController;
