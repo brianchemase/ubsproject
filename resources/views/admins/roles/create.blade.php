@@ -27,13 +27,13 @@
                         @enderror
 
                         <div class="input-group mb-3">
-                            <fieldset>
+                            <fieldset class="border-primary">
                                 <legend>Choose role permissions:</legend>
                                 @foreach ($permissions as $permission)
-                                    <div>
-                                        <input type="checkbox" id="{{ $permission->name }}" name="permissions[]"
-                                            value="{{ $permission->name }}" />
-                                        <label for="{{ $permission->name }}">
+                                    <div class="form-check text-center">
+                                        <input class="form-check-input" type="checkbox" id="{{ $permission->name }}"
+                                            name="permissions[]" value="{{ $permission->name }}" />
+                                        <label class="form-check-label" for="{{ $permission->name }}">
                                             {{ $permission->name }}
                                         </label>
                                     </div>

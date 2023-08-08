@@ -22,10 +22,6 @@ class RoleController extends Controller
             'permissions' => ['nullable']
         ]);
 
-        //permissions
-
-
-
         // Create a role
         $role = Role::create($formData);
 

@@ -26,7 +26,7 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="/role_management/roles/">
                     <i class="align-middle" data-feather="airplay"></i> <span class="align-middle">Manage Roles</span>
                 </a>
             </li>
@@ -42,7 +42,7 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a class="sidebar-link" href="#">
+                <a class="sidebar-link" href="/role_management/permissions/">
                     <i class="align-middle" data-feather="airplay"></i> <span class="align-middle">Manage
                         permissions</span>
                 </a>
