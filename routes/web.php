@@ -1,13 +1,14 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RoleController;
+use App\Http\Controllers\UserController;
 use App\Http\Controllers\AdminsController;
+use App\Http\Controllers\UsersDashController;
 use App\Http\Controllers\CollaborationsController;
-use App\Http\Controllers\FinancialSustainabilityController;
 use App\Http\Controllers\MissionSustainabilityController;
 use App\Http\Controllers\ProgramSustainabilityController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\UsersDashController;
+use App\Http\Controllers\FinancialSustainabilityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -144,7 +145,7 @@ Route::group(['prefix' => 'auth'], function () {
 
 Route::group(['prefix' => 'role_management'], function () {
 
-    Route::get('/', [RoleController::class, 'index']);
+    //Route::get('/', [RoleController::class, 'index']);
 
     Route::resource('/roles', RoleController::class);
 

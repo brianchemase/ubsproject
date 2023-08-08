@@ -10,7 +10,7 @@ class RoleController extends Controller
 {
     public function index()
     {
-        return view('super-admin-dash.roles.index', [
+        return view('admins.roles.index', [
             'roles' => Role::all(),
         ]);
     }
@@ -39,7 +39,7 @@ class RoleController extends Controller
 
     public function create()
     {
-        return view('super-admin-dash.roles.create', [
+        return view('admins.roles.create', [
             'permissions' => Permission::all(),
         ]);
     }
