@@ -9,6 +9,10 @@
             <div class="row">
                 @foreach ($roles as $role)
                     <article class="card-body m-2 outline-primary">{{ $role->name }}</article>
+
+                    @foreach ($permissions->where($role->id, '==', $permissions->roles . id) as $permission)
+                        <p class="p-1 text-center">{{ $permission->permissions . name }}</p>
+                    @endforeach
                 @endforeach
             </div>
 

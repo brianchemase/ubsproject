@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Spatie\Permission\Models\Role;
 use Spatie\Permission\Models\Permission;
 
@@ -12,6 +13,13 @@ class RoleController extends Controller
     {
         return view('admins.roles.index', [
             'roles' => Role::all(),
+            'permissions' => DB::table('roles')
+                ->join('role_has_permissions', 'roles.id', '=', 'role_has_permissions.role_id')
+                ->join('permissions', 'permissions.id', '=', 'role_has_permissions.permission_id')
+                ->select('roles.id', 'roles.name', 'permissions.id', 'permissions.name', 'role_has_permissions.*')
+                ->where('role_has_permissions.role_id', '=', 'roles.id')
+                ->get(),
+
         ]);
     }
 
